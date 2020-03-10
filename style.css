@@ -10,7 +10,7 @@
   top: 0;
   left: 0;
   padding: 15px 15px 0 15px;
-  height: calc(100% - 50px);
+  height: calc(100% - 100px);
   width: 15%;
   display: flex;
   flex-direction: column;
@@ -26,7 +26,7 @@
 /* corpo centrale */
 main {
   margin-left: 15%;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .bottone-up {
@@ -70,10 +70,11 @@ main nav ul li {
 
 .blocchino-canzone {
   padding-right: 1%;
+  flex-basis: 180px;
 }
 
-.blocchino-canzone:last-child {
-  padding-right: 0;
+.img-rotonda img {
+  border-radius: 100%;
 }
 
 
@@ -82,7 +83,8 @@ main nav ul li {
   position: fixed;
   bottom: 0;
   left: 0;
-  height: 50px;
+  height: 100px;
   width: 100%;
   background-color: purple;
+  display: flex;
 }
