@@ -18,8 +18,31 @@
   justify-content: space-between;
 }
 
-.blocco-navigazione nav img {
+#loghino {
   width: 60%;
+  padding-bottom: 20px;
+}
+
+.blocco-navigazione ul li a, #installa-john a, #installa-john h4  {
+  text-decoration: none;
+  color: white;
+  opacity: 0.7;
+}
+
+.blocco-navigazione ul li a img {
+  height: 25px;
+}
+
+.blocco-navigazione ul li a {
+  display: flex;
+}
+
+.blocco-navigazione ul li a span {
+  align-self: center;
+}
+
+#nav-play h4 {
+  color: white;
 }
 
 
