@@ -4,8 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
     <title>Spotify</title>
   </head>
+
   <body>
 
     <!-- navigazione laterale -->
@@ -35,11 +37,12 @@
           </ul>
         </nav>
         <nav id="nav-play">
-          <h4>Playlist</h4>
+          <h4>PLAYLIST</h4>
+          <a id="piu" href="#">
+            <span>+</span>
+            Crea playlist
+          </a>
           <ul>
-            <li>
-              <a href="#">Crea playlist</a>
-            </li>
             <li>
               <a href="#">Nuova Playlist</a>
             </li>
@@ -63,8 +66,14 @@
       </div>
 
       <div id="installa-john">
-        <a href="#">Installa app</a>
-        <h4>John Doe</h4>
+        <a href="#">
+          <img src="img/download.svg" alt="">
+          <span>Installa app</span>
+        </a>
+        <div id="utente">
+          <img src="img/profile.svg" alt="">
+          <h4>John Doe</h4>
+        </div>
       </div>
     </div>
 
