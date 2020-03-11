@@ -153,6 +153,12 @@ main {
   font-size: 9px;
 }
 
+.bottone-up button:hover {
+  cursor: pointer;
+  padding: 12px 27px;
+  font-size: 10px;
+}
+
 /* navigazione */
 main nav {
   padding-top: 70px;
@@ -162,33 +168,104 @@ main nav ul {
   display: flex;
   justify-content: center;
   list-style-type: none;
+  padding: 20px 0;
+  font-size: 9px;
 }
 
 main nav ul li {
-  padding-right: 10px;
+  padding-right: 15px;
 }
+
+main nav ul li a {
+  color: white;
+  opacity: 0.5;
+}
+
+main nav ul li a:hover {
+  color: white;
+  opacity: 1;
+}
+
 /* sezione canzoni */
 
 .sezione-margine {
   padding: 1%;
 }
 
+.sezione-margine h1, .sezione-margine h4, .sezione-margine h6 {
+  color: white;
+}
+
+.sezione-margine h1 {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.sezione-margine h4 {
+  font-size: 12px;
+  padding: 7px 0;
+}
+
+.sezione-margine h6 {
+  opacity: 0.5;
+  font-size: 9px;
+  font-weight: lighter;
+}
+
 .canzoni {
   display: flex;
+  padding: 20px 0;
 }
 
 .canzoni img {
   width: 100%;
 }
 
-
 .blocchino-canzone {
   padding-right: 1%;
   flex-basis: 180px;
+  text-align: center;
 }
 
 .img-rotonda img {
   border-radius: 100%;
+}
+
+
+/* hover play */
+.play-over {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: ;
+}
+
+.play-over:hover .overlay {
+  opacity: 1;
+  cursor: pointer;
+  background-color:rgba(0,0,0,0.5);
+}
+
+.overlay a i {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.img-rotonda .overlay {
+  border-radius: 50%;
 }
 
 
