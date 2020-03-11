@@ -64,6 +64,7 @@ a {
 
 #nav-play ul {
   overflow-y: scroll;
+  height: 150px;
 }
 
 #nav-play ul li, #piu {
@@ -122,6 +123,11 @@ a {
   height: 25px;
   background-color: grey;
   border-radius: 50%;
+}
+
+/* navbar laterale versione small */
+#versione-small {
+  display: none;
 }
 
 /* corpo centrale */
@@ -199,6 +205,8 @@ main nav ul li a:hover {
   top: 50%;
   transform: translate(-50% , -50%);
 }
+
+
 /* sezione canzoni */
 
 .sezione-margine {
@@ -236,7 +244,7 @@ main nav ul li a:hover {
 
 .blocchino-canzone {
   padding-right: 1%;
-  flex-basis: 180px;
+  flex-basis: calc(100% / 6);
   text-align: center;
 }
 
@@ -379,6 +387,12 @@ main nav ul li a:hover {
   padding-right: 15px;
 }
 
+
+#centro-play i:last-child {
+  padding-right: 0;
+}
+
+
 #centro-play i:hover {
   cursor: pointer;
 }
@@ -476,10 +490,130 @@ main nav ul li a:hover {
 /* mediaquery */
 
 /* display xs */
+@media screen and (max-width: 600px) {
 
+  /* navigazione laterale */
+  .blocco-navigazione {
+    width: 50px;
+  }
+
+  #blocco-nav-uno {
+    display: none;
+  }
+
+  #versione-small {
+    display: flex;
+    align-items: center;
+  }
+
+  #versione-small img {
+    height: 25px;
+  }
+
+  #versione-small ul li {
+    padding-bottom: 10px;
+  }
+
+  .blocco-navigazione img {
+    margin-right: 0;
+  }
+
+  #download-img img{
+    height: 15px;
+  }
+
+  /* corpo centrale */
+  main {
+    margin-left: 50px;
+  }
+
+  /* parte fissa in alto */
+  .bottone-up {
+    width: calc(100% - 50px);
+  }
+
+  /* navigazione centrale */
+  main nav ul {
+    flex-wrap: wrap;
+  }
+
+  /* sezione centrale canzoni */
+  .canzoni {
+    flex-wrap: wrap;
+  }
+
+  .blocchino-canzone {
+    flex-basis: calc(100% / 2);
+  }
+
+
+  /* player */
+
+  #iconcine {
+    padding-left: 0;
+  }
+
+  #iconcine i:first-child {
+    padding-right: 0;
+    padding-bottom: 5px;
+  }
+
+  #iconcine i {
+    display: block;
+  }
+
+  #linea-play {
+    width: 100px;
+  }
+
+  #player span:first-child {
+    padding-right: 5px;
+  }
+
+  #player span:last-child {
+    padding-left: 5px;
+  }
+
+  #linea-due {
+    width: 60px;
+  }
+
+
+
+
+}
 
 
 /* display small */
+@media screen and (min-width: 601px) and (max-width: 700px) {
+
+  .canzoni {
+    flex-wrap: wrap;
+  }
+
+  .blocchino-canzone {
+    flex-basis: calc(100% / 2);
+  }
+
+
+  #blocco-nav-uno {
+    display: block;
+  }
+
+
+}
+
 
 
 /* display medium */
+@media screen and (min-width: 701px) and (max-width: 1100px) {
+
+  .canzoni {
+    flex-wrap: wrap;
+  }
+
+  .blocchino-canzone {
+    flex-basis: calc(100% / 4);
+  }
+
+}
