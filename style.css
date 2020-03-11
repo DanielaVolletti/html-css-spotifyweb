@@ -129,26 +129,38 @@ a {
 main {
   margin-left: 15%;
   margin-bottom: 100px;
+  background-color: #141922;
 }
 
 .bottone-up {
-  background-color: white;
+  background-color:rgba(0,0,0,0.5);
+  z-index: 1;
   position: fixed;
   top: 0;
   right: 0;
   display: flex;
   justify-content: flex-end;
-  height: 50px;
+  height: 70px;
   align-items: center;
   width: calc(100% - 15%);
 }
 
+.bottone-up button {
+  background: none;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 25px;
+  font-size: 9px;
+}
+
 /* navigazione */
+main nav {
+  padding-top: 70px;
+}
 
 main nav ul {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
   list-style-type: none;
 }
 
