@@ -29,7 +29,6 @@ a {
 }
 
 .blocco-navigazione ul li {
-  padding-bottom: 5px;
   font-size: 10px;
 }
 
@@ -186,13 +185,19 @@ main nav ul li a:hover {
   opacity: 1;
 }
 
-main nav ul li div {
+#contenitore-yellow {
+  position: relative;
+  padding-top: 5px;
+}
+
+#yellow {
   width: 20px;
   height: 2px;
   background-color: yellowgreen;
-  position: relative;
-  left: 36%;
-  top: 12%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50% , -50%);
 }
 /* sezione canzoni */
 
@@ -467,3 +472,14 @@ main nav ul li div {
 #linea-due:hover #tratto-due {
   background-color: lightgreen;
 }
+
+/* mediaquery */
+
+/* display xs */
+
+
+
+/* display small */
+
+
+/* display medium */
