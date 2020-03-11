@@ -15,8 +15,8 @@ a {
   top: 0;
   left: 0;
   padding: 15px 15px 0 15px;
-  height: calc(100% - 100px);
-  width: 15%;
+  height: calc(100% - 90px);
+  width: 200px;
   display: flex;
   flex-direction: column;
   background-color: black;
@@ -127,8 +127,8 @@ a {
 
 /* corpo centrale */
 main {
-  margin-left: 15%;
-  margin-bottom: 100px;
+  margin-left: 200px;
+  margin-bottom: 90px;
   background-color: #141922;
 }
 
@@ -142,7 +142,7 @@ main {
   justify-content: flex-end;
   height: 70px;
   align-items: center;
-  width: calc(100% - 15%);
+  width: calc(100% - 200px);
 }
 
 .bottone-up button {
@@ -270,12 +270,192 @@ main nav ul li a:hover {
 
 
 /* player */
-.player {
+#player {
   position: fixed;
   bottom: 0;
   left: 0;
-  height: 100px;
+  height: 90px;
   width: 100%;
-  background-color: purple;
+  background-color: #282828;
+  padding: 1%;
+}
+
+.player-flex-princ {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.player-flex {
+  display: flex;
+}
+
+/* parte sinistra player */
+
+#immagine-sinister {
+  width: 50px;
+}
+
+#immagine-sinister img {
+  width: 100%;
+}
+
+#titolini-player, #iconcine {
+  align-self: center;
+}
+
+#titolini-player {
+  padding: 0 20px 0 5px;
+}
+
+#titolini-player a, #player {
+  color: white;
+}
+
+#titolini-player a:hover {
+  text-decoration: underline;
+}
+
+#titolini-player a h5 {
+  font-size: 10px;
+}
+
+#titolini-player a h6 {
+  opacity: 0.5;
+  font-size: 9px;
+}
+
+#titolini-player a h6:hover {
+  color: white;
+  opacity: 1;
+}
+
+#iconcine {
+  padding-left: 10px;
+}
+
+#iconcine i {
+  color: white;
+  opacity: 0.5;
+  font-size: 13px;
+}
+
+#iconcine i:first-child {
+  padding-right: 10px;
+}
+
+#iconcine i:hover {
+  cursor: pointer;
+  color: white;
+  opacity: 1;
+}
+
+/* parte centrale player */
+
+.player-flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+#centro-play {
+  align-self: center;
+  padding-bottom: 10px;
+}
+
+#centro-play i {
+  padding-right: 15px;
+}
+
+#centro-play i:hover {
+  cursor: pointer;
+}
+
+#player span {
+  font-size: 9px;
+}
+
+#player span:first-child {
+  padding-right: 30px;
+}
+
+#player span:last-child {
+  padding-left: 30px;
+}
+
+#linea-play {
+  height: 3px;
+  background-color: grey;
+  width: 400px;
+  align-self: center;
+  opacity: 0.4;
+}
+
+#tratto-pallino {
+  height: 100%;
+  width: 20%;
+  background-color: white;
+  justify-content: flex-end;
+}
+
+#pallino {
+  height: 8px;
+  width: 10%;
+  border-radius: 30%;
+  background-color: white;
+  align-self: center;
+  display: none;
+}
+
+#linea-play:hover #tratto-pallino #pallino {
+  display: block;
+}
+
+#linea-play:hover {
+  cursor: pointer;
+}
+
+#linea-play:hover #tratto-pallino {
+  background-color: lightgreen;
+}
+
+/* parte destra player */
+#play-destra i {
+  padding-right: 15px;
+  font-size: 11px;
+}
+
+#linea-due {
+  height: 3px;
+  background-color: grey;
+  width: 100px;
+  align-self: center;
+  opacity: 0.4;
+}
+
+#tratto-due {
+  height: 100%;
+  width: 20%;
+  background-color: white;
+  justify-content: flex-end;
+}
+
+#pallino-due {
+  height: 8px;
+  width: 40%;
+  border-radius: 30%;
+  background-color: white;
+  align-self: center;
+  display: none;
+}
+
+#linea-due:hover #tratto-due #pallino-due {
+  display: block;
+}
+
+#linea-due:hover {
+  cursor: pointer;
+}
+
+#linea-due:hover #tratto-due {
+  background-color: lightgreen;
 }
