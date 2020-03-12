@@ -1,3 +1,4 @@
+/* regole generali */
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +10,7 @@ a {
   text-decoration: none;
 }
 
-/* sezione navigazione */
+/* sezione navigazione parte sinistra */
 .blocco-navigazione {
   position: fixed;
   top: 0;
@@ -138,6 +139,7 @@ main {
   background-color: #141922;
 }
 
+/* bottone sezione fissa parte centrale */
 .bottone-up {
   background-color:rgba(0,0,0,0.5);
   z-index: 1;
@@ -290,7 +292,6 @@ main nav ul li a:hover {
   border-radius: 50%;
 }
 
-
 /* player */
 #player {
   position: fixed;
@@ -310,7 +311,6 @@ main nav ul li a:hover {
 }
 
 /* parte sinistra player */
-
 #immagine-sinister {
   width: 35px;
   margin-right: 5px;
@@ -372,7 +372,6 @@ main nav ul li a:hover {
 }
 
 /* parte centrale player */
-
 .player-flex-col {
   display: flex;
   flex-direction: column;
@@ -388,11 +387,9 @@ main nav ul li a:hover {
   font-size: 20px;
 }
 
-
 #centro-play i:last-child {
   padding-right: 0;
 }
-
 
 #centro-play i:hover {
   cursor: pointer;
@@ -502,6 +499,7 @@ main nav ul li a:hover {
     display: none;
   }
 
+  /* versione small navigazione sinistra */
   #versione-small {
     display: flex;
     align-items: center;
@@ -547,7 +545,6 @@ main nav ul li a:hover {
   }
 
   /* sezione centrale canzoni */
-
   .sezione-margine {
     padding: 3%;
   }
@@ -562,7 +559,6 @@ main nav ul li a:hover {
 
 
   /* player */
-
   #iconcine {
     padding-left: 0;
   }
@@ -612,6 +608,7 @@ main nav ul li a:hover {
 /* display small */
 @media screen and (min-width: 601px) and (max-width: 700px) {
 
+  /* sezione canzoni */
   .canzoni {
     flex-wrap: wrap;
   }
@@ -639,7 +636,6 @@ main nav ul li a:hover {
 
 
   /* player */
-
   #iconcine {
     padding-left: 0;
   }
@@ -676,6 +672,7 @@ main nav ul li a:hover {
 /* display medium */
 @media screen and (min-width: 701px) and (max-width: 1100px) {
 
+  /* sezione canzoni */
   .canzoni {
     flex-wrap: wrap;
   }
@@ -683,7 +680,6 @@ main nav ul li a:hover {
   .blocchino-canzone {
     flex-basis: calc(100% / 4);
   }
-
 
   /* navigazione centrale */
   main nav ul {
@@ -700,7 +696,6 @@ main nav ul li a:hover {
 
 
   /* player */
-
   #linea-play {
     width: 250px;
   }
