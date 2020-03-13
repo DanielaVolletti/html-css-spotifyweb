@@ -1,0 +1,724 @@
+/* regole generali */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* sezione navigazione parte sinistra */
+.blocco-navigazione {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 15px 15px 0 15px;
+  height: calc(100% - 90px);
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  justify-content: space-between;
+}
+
+#loghino {
+  width: 60%;
+  padding-bottom: 20px;
+}
+
+.blocco-navigazione ul li {
+  font-size: 10px;
+  padding-bottom: 5px;
+}
+
+.blocco-navigazione ul li a, #installa-john a, #piu {
+  color: white;
+  opacity: 0.5;
+}
+
+.blocco-navigazione h4 {
+  color: white;
+}
+
+.blocco-navigazione ul li a img {
+  height: 25px;
+}
+
+.blocco-navigazione ul li a {
+  display: flex;
+}
+
+.blocco-navigazione ul li a:hover, #installa-john a:hover, #nav-play a:hover {
+  color: white;
+  opacity: 1;
+}
+
+.blocco-navigazione ul li a span {
+  align-self: center;
+}
+
+.blocco-navigazione img {
+  margin-right: 5px;
+}
+
+#nav-play ul {
+  overflow-y: scroll;
+  height: 150px;
+}
+
+#nav-play ul li, #piu {
+  padding-bottom: 15px;
+}
+
+#nav-play h4 {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 10px;
+}
+
+#piu {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+}
+
+#piu span {
+  background-color: white;
+  opacity: 0.7;
+  color: black;
+  padding: 0 9px;
+  margin-right: 5px;
+  font-size: 25px;
+}
+
+#installa-john a {
+  padding-bottom: 10px;
+  display: flex;
+}
+
+#installa-john a span {
+  font-size: 9px;
+  align-self: center;
+}
+
+#installa-john img {
+  height: 15px;
+}
+
+#utente {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  border-top: solid 1px grey;
+}
+
+#utente h4 {
+  font-size: 10px;
+  align-self: center;
+}
+
+#utente img {
+  height: 25px;
+  background-color: grey;
+  border-radius: 50%;
+}
+
+/* navbar laterale versione small */
+#versione-small {
+  display: none;
+}
+
+/* corpo centrale */
+main {
+  margin-left: 200px;
+  margin-bottom: 90px;
+  background-color: #141922;
+}
+
+/* bottone sezione fissa parte centrale */
+.bottone-up {
+  background-color:rgba(0,0,0,0.5);
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  height: 70px;
+  align-items: center;
+  width: calc(100% - 200px);
+}
+
+.bottone-up button {
+  background: none;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 25px;
+  font-size: 9px;
+}
+
+.bottone-up button:hover {
+  cursor: pointer;
+  padding: 12px 27px;
+  font-size: 10px;
+}
+
+/* navigazione parte centrale pagina*/
+main nav {
+  padding: 2%;
+  padding-top: 70px;
+}
+
+main nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 20px 0;
+  font-size: 13px;
+}
+
+main nav ul li {
+  padding-right: 15px;
+}
+
+main nav ul li a {
+  color: white;
+  opacity: 0.5;
+}
+
+main nav ul li a:hover {
+  color: white;
+  opacity: 1;
+}
+
+#contenitore-yellow {
+  position: relative;
+  padding-top: 5px;
+}
+
+#yellow {
+  width: 30%;
+  height: 2px;
+  background-color: yellowgreen;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50% , -50%);
+}
+
+
+/* sezione canzoni */
+
+.sezione-margine {
+  padding: 1%;
+}
+
+.sezione-margine h1, .sezione-margine h4, .sezione-margine h6 {
+  color: white;
+}
+
+.sezione-margine h1 {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.sezione-margine h4 {
+  font-size: 12px;
+  padding: 7px 0;
+}
+
+.sezione-margine h6 {
+  opacity: 0.5;
+  font-size: 9px;
+  font-weight: lighter;
+}
+
+.canzoni {
+  display: flex;
+  padding: 20px 0;
+}
+
+.canzoni img {
+  width: 100%;
+}
+
+.blocchino-canzone {
+  padding-right: 1%;
+  flex-basis: calc(100% / 6);
+  text-align: center;
+}
+
+.img-rotonda img {
+  border-radius: 100%;
+}
+
+/* hover play */
+.play-over {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 98%;
+  width: 100%;
+  opacity: 0;
+}
+
+.play-over:hover .overlay {
+  opacity: 1;
+  cursor: pointer;
+  background-color:rgba(0,0,0,0.5);
+}
+
+.overlay a i {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.img-rotonda .overlay {
+  border-radius: 50%;
+}
+
+/* player */
+#player {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 90px;
+  width: 100%;
+  background-color: #282828;
+  padding: 1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.player-flex {
+  display: flex;
+}
+
+/* parte sinistra player */
+#immagine-sinister {
+  width: 35px;
+  margin-right: 5px;
+}
+
+#immagine-sinister img {
+  width: 100%;
+}
+
+#titolini-player, #iconcine {
+  align-self: center;
+}
+
+#titolini-player {
+  padding: 0 20px 0 5px;
+}
+
+#titolini-player a, #player {
+  color: white;
+}
+
+#titolini-player a:hover {
+  text-decoration: underline;
+}
+
+#titolini-player a h5 {
+  font-size: 12px;
+}
+
+#titolini-player a h6 {
+  opacity: 0.5;
+  font-size: 10px;
+  font-weight: lighter;
+}
+
+#titolini-player a h6:hover {
+  color: white;
+  opacity: 1;
+}
+
+#iconcine {
+  padding-left: 10px;
+}
+
+#iconcine i {
+  color: white;
+  opacity: 0.5;
+  font-size: 16px;
+}
+
+#iconcine i:first-child {
+  padding-right: 10px;
+}
+
+#iconcine i:hover {
+  cursor: pointer;
+  color: white;
+  opacity: 1;
+}
+
+/* parte centrale player */
+.player-flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+#centro-play {
+  align-self: center;
+  padding-bottom: 15px;
+}
+
+#centro-play i {
+  padding-right: 20px;
+  font-size: 20px;
+}
+
+#centro-play i:last-child {
+  padding-right: 0;
+}
+
+#centro-play i:hover {
+  cursor: pointer;
+}
+
+#player span {
+  font-size: 9px;
+}
+
+#player span:first-child {
+  padding-right: 30px;
+}
+
+#player span:last-child {
+  padding-left: 30px;
+}
+
+#linea-play {
+  height: 4px;
+  background-color: grey;
+  width: 400px;
+  align-self: center;
+  opacity: 0.4;
+}
+
+#tratto-pallino {
+  height: 100%;
+  width: 20%;
+  background-color: white;
+  justify-content: flex-end;
+}
+
+#pallino {
+  height: 8px;
+  width: 10%;
+  border-radius: 30%;
+  background-color: white;
+  align-self: center;
+  display: none;
+}
+
+#linea-play:hover #tratto-pallino #pallino {
+  display: block;
+}
+
+#linea-play:hover {
+  cursor: pointer;
+}
+
+#linea-play:hover #tratto-pallino {
+  background-color: lightgreen;
+}
+
+/* parte destra player */
+#play-destra i {
+  padding-right: 15px;
+  font-size: 15px;
+}
+
+#linea-due {
+  height: 4px;
+  background-color: grey;
+  width: 100px;
+  align-self: center;
+  opacity: 0.4;
+}
+
+#tratto-due {
+  height: 100%;
+  width: 20%;
+  background-color: white;
+  justify-content: flex-end;
+}
+
+#pallino-due {
+  height: 8px;
+  width: 40%;
+  border-radius: 30%;
+  background-color: white;
+  align-self: center;
+  display: none;
+}
+
+#linea-due:hover #tratto-due #pallino-due {
+  display: block;
+}
+
+#linea-due:hover {
+  cursor: pointer;
+}
+
+#linea-due:hover #tratto-due {
+  background-color: lightgreen;
+}
+
+/* mediaquery altezza */
+
+@media screen and (max-height: 350px) {
+  .bottone-up {
+    display: none;
+  }
+}
+
+@media screen and (min-height: 351px) {
+  .bottone-up {
+    display: flex;
+    width: calc(100% - 50px);
+  }
+}
+
+/* mediaquery larghezza */
+
+/* display xs */
+@media screen and (max-width: 600px) {
+
+  /* navigazione laterale */
+  .blocco-navigazione {
+    width: 50px;
+  }
+
+  #blocco-nav-uno {
+    display: none;
+  }
+
+  /* versione small navigazione sinistra */
+  #versione-small {
+    display: flex;
+    align-items: center;
+  }
+
+  #versione-small img {
+    height: 25px;
+  }
+
+  #versione-small ul li {
+    padding-bottom: 10px;
+  }
+
+  .blocco-navigazione img {
+    margin-right: 0;
+  }
+
+  #download-img {
+    justify-content: center;
+  }
+
+  #download-img img{
+    height: 15px;
+  }
+
+  /* corpo centrale */
+  main {
+    margin-left: 50px;
+  }
+
+  /* parte fissa in alto */
+  .bottone-up {
+    width: calc(100% - 50px);
+  }
+
+  /* navigazione centrale */
+  main nav ul {
+    flex-wrap: wrap;
+  }
+
+  main nav ul li {
+    padding-bottom: 20px;
+  }
+
+  /* sezione centrale canzoni */
+  .sezione-margine {
+    padding: 3%;
+  }
+
+  .blocchino-canzone {
+    flex-basis: calc(100% / 4);
+    text-align: left;
+  }
+
+  .play-over {
+    display: none;
+  }
+
+  /* player */
+  #iconcine {
+    padding-left: 0;
+  }
+
+  #iconcine i:first-child {
+    padding-right: 0;
+    padding-bottom: 5px;
+  }
+
+  #iconcine i {
+    display: block;
+  }
+
+  #linea-play {
+    width: 130px;
+  }
+
+  #player span:first-child {
+    padding-right: 5px;
+  }
+
+  #player span:last-child {
+    padding-left: 5px;
+  }
+
+  #linea-due {
+    width: 90px;
+  }
+
+  #titolini-player {
+    padding-right: 5px;
+    padding-left: 0;
+  }
+
+  #titolini-player a h5 {
+    font-size: 10px;
+  }
+
+  #titolini-player a h6 {
+    font-size: 9px;
+  }
+
+}
+
+/* display small */
+@media screen and (min-width: 601px) and (max-width: 700px) {
+
+  /* sezione canzoni */
+  .blocchino-canzone {
+    flex-basis: calc(100% / 3);
+    text-align: left;
+  }
+
+  .play-over {
+    display: none;
+  }
+
+  #blocco-nav-uno {
+    display: block;
+  }
+
+  /* navigazione centrale */
+  main nav ul {
+    flex-wrap: wrap;
+  }
+
+  main nav ul li {
+    padding-bottom: 20px;
+  }
+
+  .sezione-margine {
+    padding: 3%;
+  }
+
+  /* player */
+  #iconcine {
+    padding-left: 0;
+  }
+
+  #iconcine i:first-child {
+    padding-right: 0;
+    padding-bottom: 5px;
+  }
+
+  #iconcine i {
+    display: block;
+  }
+
+  #linea-play {
+    width: 130px;
+  }
+
+  #player span:first-child {
+    padding-right: 5px;
+  }
+
+  #player span:last-child {
+    padding-left: 5px;
+  }
+
+  #linea-due {
+    width: 90px;
+  }
+
+}
+
+/* display medium */
+@media screen and (min-width: 701px) and (max-width: 1100px) {
+
+  /* sezione canzoni */
+  .blocchino-canzone {
+    flex-basis: calc(100% / 4);
+    text-align: left;
+  }
+
+  .play-over {
+    display: none;
+  }
+
+  /* navigazione centrale */
+  main nav ul {
+    flex-wrap: wrap;
+  }
+
+  main nav ul li {
+    padding-bottom: 20px;
+  }
+
+  .sezione-margine {
+    padding: 3%;
+  }
+
+  /* player */
+  #linea-play {
+    width: 250px;
+  }
+
+  #player span:first-child {
+    padding-right: 5px;
+  }
+
+  #player span:last-child {
+    padding-left: 5px;
+  }
+
+  #linea-due {
+    width: 90px;
+  }
+
+}

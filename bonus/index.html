@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d773f239a3.js" crossorigin="anonymous"></script>
+    <title>Spotify</title>
+  </head>
+
+  <body>
+
+    <!-- navigazione laterale -->
+    <div id="blocco-nav-uno" class="blocco-navigazione">
+      <div class="">
+        <nav>
+          <img id="loghino" src="img/logo.svg" alt="logo spotify">
+          <ul>
+            <li>
+              <a href="#">
+                <img src="img/home.svg" alt="">
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/search.svg" alt="">
+                <span>Cerca</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/libreria.svg" alt="">
+                <span>La tua libreria</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <nav id="nav-play">
+          <h4>PLAYLIST</h4>
+          <a id="piu" href="#">
+            <span>+</span>
+            Crea playlist
+          </a>
+          <ul>
+            <li>
+              <a href="#">Nuova Playlist</a>
+            </li>
+            <li>
+              <a href="#">Nuova Playlist</a>
+            </li>
+            <li>
+              <a href="#">Nuova Playlist</a>
+            </li>
+            <li>
+              <a href="#">Nuova Playlist</a>
+            </li>
+            <li>
+              <a href="#">Nuova Playlist</a>
+            </li>
+            <li>
+              <a href="#">Nuova Playlist</a>
+            </li>
+            <li>
+              <a href="#">Nuova Playlist</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- parte inferiore navigazione laterale -->
+      <div id="installa-john">
+        <a href="#">
+          <img src="img/download.svg" alt="">
+          <span>Installa app</span>
+        </a>
+        <div id="utente">
+          <img src="img/profile.svg" alt="">
+          <h4>John Doe</h4>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- blocco navigazione in versione small -->
+    <div id="versione-small" class="blocco-navigazione">
+      <div class="">
+        <ul>
+          <li>
+            <img src="img/logo-small.svg" alt="">
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/home.svg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/search.svg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/libreria.svg" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="">
+        <ul>
+          <li>
+            <a id="download-img" href="#">
+              <img src="img/download.svg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/profile.svg" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- fine blocco in navigazione small -->
+
+    <!-- blocco centrale pagina -->
+    <main>
+      <!-- sezione fissa in alto con bottone -->
+      <div class="bottone-up">
+        <button type="button" name="button">EFFETTUA L'UPGRADE</button>
+      </div>
+      <!-- barra di navigazione centrale -->
+      <nav>
+        <ul>
+          <li>
+            <a href="#">IN EVIDENZA</a>
+            <div id="contenitore-yellow">
+              <div id="yellow">
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#">PODCAST</a>
+          </li>
+          <li>
+            <a href="#">CLASSIFICHE</a>
+          </li>
+          <li>
+            <a href="#">GENERI E MOOD</a>
+          </li>
+          <li>
+            <a href="#">NUOVE USCITE</a>
+          </li>
+          <li>
+            <a href="#">SCOPRI</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- prima sezione canzoni -->
+      <section class="sezione-margine">
+        <h1>Recently played</h1>
+        <div class="canzoni">
+          <!-- primo blocchino canzone prima fila -->
+          <div class="blocchino-canzone">
+            <div class="play-over">
+              <img src="img/metal_lifting.jpg" alt="">
+              <div class="overlay">
+                <a href="#">
+                  <i class="far fa-play-circle"></i>
+                </a>
+              </div>
+            </div>
+            <h4>Heavy metal</h4>
+            <h6>Subtitle</h6>
+          </div>
+          <!-- secondo blocchino canzone prima fila -->
+          <div class="blocchino-canzone">
+            <div class="play-over">
+              <img src="img/stranger.jpeg" alt="">
+              <div class="overlay">
+                <a href="#">
+                  <i class="far fa-play-circle"></i>
+                </a>
+              </div>
+            </div>
+            <h4>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h4>
+            <h6>Kyle Dixon & Michael Stein</h6>
+          </div>
+          <!-- terzo blocchino canzone prima fila -->
+          <div class="blocchino-canzone">
+            <div class="play-over">
+              <img src="img/aquietplace.jpeg" alt="">
+              <div class="overlay">
+                <a href="#">
+                  <i class="far fa-play-circle"></i>
+                </a>
+              </div>
+            </div>
+            <h4>A quiet place</h4>
+            <h6>Subtitle</h6>
+          </div>
+          <!-- quarto blocchino canzone prima fila -->
+          <div class="blocchino-canzone">
+            <div class="play-over">
+              <img src="img/split.jpeg" alt="">
+              <div class="overlay">
+                <a href="#">
+                  <i class="far fa-play-circle"></i>
+                </a>
+              </div>
+            </div>
+            <h4>Split</h4>
+            <h6>Subtitle</h6>
+          </div>
+          <!-- quinto blocchino canzone prima fila -->
+          <div class="blocchino-canzone">
+            <div class="play-over">
+              <img src="img/cure.jpeg" alt="">
+              <div class="overlay">
+                <a href="#">
+                  <i class="far fa-play-circle"></i>
+                </a>
+              </div>
+            </div>
+            <h4>A cure for wellness</h4>
+            <h6>Subtitle</h6>
+          </div>
+          <!-- sesto blocchino canzone prima fila -->
+          <div class="blocchino-canzone">
+            <div class="play-over">
+              <img src="img/sinister.jpeg" alt="">
+              <div class="overlay">
+                <a href="#">
+                  <i class="far fa-play-circle"></i>
+                </a>
+              </div>
+            </div>
+            <h4>Sinister</h4>
+            <h6>Subtitle</h6>
+          </div>
+        </div>
+      </section>
+
+      <!-- seconda sezione canzoni -->
+      <section class="sezione-margine">
+        <h1>Creato per John Doe</h1>
+        <h6>Più ascolti, più accurati saranno i suggerimenti.</h6>
+        <div class="canzoni">
+          <!-- primo blocchino canzone seconda fila -->
+          <div class="blocchino-canzone">
+            <div class="play-over">
+              <img src="img/radar.jpeg" alt="">
+              <div class="overlay">
+                <a href="#">
+                  <i class="far fa-play-circle"></i>
+                </a>
+              </div>
+            </div>
+            <h4>Relase Radar</h4>
+          </div>
+          <!-- secondo blocchino canzone seconda fila -->
+          <div class="blocchino-canzone">
+            <div class="play-over">
+              <img src="img/mixdaily.jpeg" alt="">
+              <div class="overlay">
+                <a href="#">
+                  <i class="far fa-play-circle"></i>
+                </a>
+              </div>
+            </div>
+            <h4>Daily Mix 1</h4>
+          </div>
+        </div>
+      </section>
+
+      <!-- terza sezione canzoni -->
+      <section class="sezione-margine">
+        <h1>Artisti più popolari</h1>
+        <h6>Più ascolti, più accurati saranno i suggerimenti.</h6>
+        <div class="canzoni">
+          <!-- primo blocchino immagine rotonda -->
+          <div class="blocchino-canzone img-rotonda">
+            <div class="play-over">
+              <img src="img/youg.jpeg" alt="">
+              <div class="overlay">
+                <a href="#">
+                  <i class="far fa-play-circle"></i>
+                </a>
+              </div>
+            </div>
+            <h4>Lana del Rey</h4>
+          </div>
+          <!-- secondo blocchino immagine rotonda -->
+          <div class="blocchino-canzone img-rotonda">
+            <div class="play-over">
+              <img src="img/einaudi.jpeg" alt="">
+              <div class="overlay">
+                <a href="#">
+                  <i class="far fa-play-circle"></i>
+                </a>
+              </div>
+            </div>
+            <h4>Ludovico Einaudi</h4>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <!-- player in basso -->
+    <div id="player">
+      <!-- parte sinistra player -->
+      <div class="player-flex">
+        <div id="immagine-sinister">
+          <img src="img/sinister.jpeg" alt="">
+        </div>
+        <div id="titolini-player">
+          <a href="#"><h5>Sinister</h5></a>
+          <a href="#"><h6>Brano nome</h6></a>
+        </div>
+        <div id="iconcine">
+          <i class="far fa-heart"></i>
+          <i class="far fa-folder"></i>
+        </div>
+      </div>
+      <!-- parte centrale player -->
+      <div class="player-flex-col">
+        <div id="centro-play" class="player-flex">
+          <i class="fas fa-random"></i>
+          <i class="fas fa-step-backward"></i>
+          <i class="far fa-play-circle"></i>
+          <i class="fas fa-step-forward"></i>
+          <i class="fas fa-redo-alt"></i>
+        </div>
+        <div class="player-flex">
+          <span>0:25</span>
+          <div id="linea-play">
+            <div id="tratto-pallino" class="player-flex">
+              <div id="pallino">
+              </div>
+            </div>
+          </div>
+          <span>4:35</span>
+        </div>
+      </div>
+      <!-- parte destra player -->
+      <div id="play-destra" class="player-flex">
+        <i class="fas fa-list-ul"></i>
+        <i class="fas fa-desktop"></i>
+        <i class="fas fa-volume-up"></i>
+        <div id="linea-due">
+          <div id="tratto-due" class="player-flex">
+            <div id="pallino-due">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
