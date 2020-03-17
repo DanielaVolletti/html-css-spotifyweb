@@ -12,21 +12,38 @@ a {
 
 /* sezione navigazione parte sinistra */
 .blocco-navigazione {
-  position: fixed;
-  top: 0;
-  left: 0;
   padding: 15px 15px 0 15px;
-  height: calc(100% - 90px);
+  height: calc(100vh - 90px);
   width: 200px;
   display: flex;
   flex-direction: column;
   background-color: black;
   justify-content: space-between;
+  float: left;
+}
+
+#blocco-nav-uno {
+  position: relative;
+}
+
+#nav-superiore {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100%;
 }
 
 #loghino {
   width: 60%;
   padding-bottom: 20px;
+}
+
+#linea-home {
+  width: 2px;
+  position: absolute;
+  background-color: yellowgreen;
+  height: 24px;
+  left: 2px;
 }
 
 .blocco-navigazione ul li {
@@ -37,6 +54,14 @@ a {
 .blocco-navigazione ul li a, #installa-john a, #piu {
   color: white;
   opacity: 0.5;
+}
+
+.blocco-navigazione ul li a:focus, #installa-john a:focus, #piu:focus {
+  opacity: 1;
+}
+
+#home a {
+  opacity: 1;
 }
 
 .blocco-navigazione h4 {
@@ -64,9 +89,16 @@ a {
   margin-right: 5px;
 }
 
+#nav-play {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100%;
+}
+
 #nav-play ul {
-  overflow-y: scroll;
-  height: 150px;
+  overflow-y: auto;
+  height: 100%;
 }
 
 #nav-play ul li, #piu {
@@ -133,9 +165,11 @@ a {
 
 /* corpo centrale */
 main {
-  margin-left: 200px;
-  margin-bottom: 90px;
   background-color: #141922;
+  float: left;
+  width: calc(100% - 200px);
+  height: calc(100vh - 90px);
+  overflow: auto;
 }
 
 /* bottone sezione fissa parte centrale */
@@ -150,6 +184,7 @@ main {
   height: 70px;
   align-items: center;
   width: calc(100% - 200px);
+  padding: 15px;
 }
 
 .bottone-up button {
@@ -189,8 +224,11 @@ main nav ul li a {
   opacity: 0.5;
 }
 
+main nav ul li a:focus {
+  opacity: 1;
+}
+
 main nav ul li a:hover {
-  color: white;
   opacity: 1;
 }
 
@@ -238,7 +276,7 @@ main nav ul li a:hover {
 
 .canzoni {
   display: flex;
-  padding: 20px 0;
+  padding-top: 20px;
 }
 
 .canzoni img {
@@ -247,6 +285,7 @@ main nav ul li a:hover {
 
 .blocchino-canzone {
   padding-right: 1%;
+  padding-bottom: 2%;
   flex-basis: calc(100% / 6);
   text-align: center;
 }
@@ -254,6 +293,7 @@ main nav ul li a:hover {
 .img-rotonda img {
   border-radius: 100%;
 }
+
 
 /* hover play */
 .play-over {
@@ -292,9 +332,6 @@ main nav ul li a:hover {
 
 /* player */
 #player {
-  position: fixed;
-  bottom: 0;
-  left: 0;
   height: 90px;
   width: 100%;
   background-color: #282828;
@@ -407,23 +444,22 @@ main nav ul li a:hover {
 
 #linea-play {
   height: 4px;
-  background-color: grey;
+  background-color: #535353;
   width: 400px;
   align-self: center;
-  opacity: 0.4;
 }
 
 #tratto-pallino {
   height: 100%;
   width: 20%;
-  background-color: white;
+  background-color: #c8c8c8;
   justify-content: flex-end;
 }
 
 #pallino {
-  height: 8px;
-  width: 10%;
-  border-radius: 30%;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
   background-color: white;
   align-self: center;
   display: none;
@@ -438,7 +474,7 @@ main nav ul li a:hover {
 }
 
 #linea-play:hover #tratto-pallino {
-  background-color: lightgreen;
+  background-color: yellowgreen;
 }
 
 /* parte destra player */
@@ -449,23 +485,22 @@ main nav ul li a:hover {
 
 #linea-due {
   height: 4px;
-  background-color: grey;
+  background-color: #535353;
   width: 100px;
   align-self: center;
-  opacity: 0.4;
 }
 
 #tratto-due {
   height: 100%;
   width: 20%;
-  background-color: white;
+  background-color: #c8c8c8;
   justify-content: flex-end;
 }
 
 #pallino-due {
-  height: 8px;
-  width: 40%;
-  border-radius: 30%;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
   background-color: white;
   align-self: center;
   display: none;
@@ -480,8 +515,10 @@ main nav ul li a:hover {
 }
 
 #linea-due:hover #tratto-due {
-  background-color: lightgreen;
+  background-color: yellowgreen;
 }
+
+/* mediaquery */
 
 /* mediaquery altezza */
 
@@ -539,7 +576,7 @@ main nav ul li a:hover {
 
   /* corpo centrale */
   main {
-    margin-left: 50px;
+    width: calc(100% - 50px);
   }
 
   /* parte fissa in alto */
@@ -626,10 +663,6 @@ main nav ul li a:hover {
 
   .play-over {
     display: none;
-  }
-
-  #blocco-nav-uno {
-    display: block;
   }
 
   /* navigazione centrale */
