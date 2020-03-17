@@ -12,16 +12,21 @@ a {
 
 /* sezione navigazione parte sinistra */
 .blocco-navigazione {
-  position: fixed;
-  top: 0;
-  left: 0;
   padding: 15px 15px 0 15px;
-  height: calc(100% - 90px);
+  height: calc(100vh - 90px);
   width: 200px;
   display: flex;
   flex-direction: column;
   background-color: black;
   justify-content: space-between;
+  float: left;
+}
+
+#nav-superiore {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100%;
 }
 
 #loghino {
@@ -64,9 +69,16 @@ a {
   margin-right: 5px;
 }
 
+#nav-play {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100%;
+}
+
 #nav-play ul {
-  overflow-y: scroll;
-  height: 150px;
+  overflow-y: auto;
+  height: 100%;
 }
 
 #nav-play ul li, #piu {
@@ -133,9 +145,11 @@ a {
 
 /* corpo centrale */
 main {
-  margin-left: 200px;
-  margin-bottom: 90px;
   background-color: #141922;
+  float: left;
+  width: calc(100% - 200px);
+  height: calc(100vh - 90px);
+  overflow: auto;
 }
 
 /* bottone sezione fissa parte centrale */
@@ -247,6 +261,7 @@ main nav ul li a:hover {
 
 .blocchino-canzone {
   padding-right: 1%;
+  padding-bottom: 2%;
   flex-basis: calc(100% / 6);
   text-align: center;
 }
@@ -293,9 +308,6 @@ main nav ul li a:hover {
 
 /* player */
 #player {
-  position: fixed;
-  bottom: 0;
-  left: 0;
   height: 90px;
   width: 100%;
   background-color: #282828;
@@ -526,7 +538,7 @@ main nav ul li a:hover {
 
   /* corpo centrale */
   main {
-    margin-left: 50px;
+    width: calc(100% - 50px);
   }
 
   /* parte fissa in alto */
@@ -600,7 +612,6 @@ main nav ul li a:hover {
     font-size: 9px;
   }
 
-
 }
 
 
@@ -614,10 +625,6 @@ main nav ul li a:hover {
 
   .blocchino-canzone {
     flex-basis: calc(100% / 2);
-  }
-
-  #blocco-nav-uno {
-    display: block;
   }
 
   /* navigazione centrale */
