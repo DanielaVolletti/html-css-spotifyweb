@@ -22,6 +22,10 @@ a {
   float: left;
 }
 
+#blocco-nav-uno {
+  position: relative;
+}
+
 #nav-superiore {
   display: flex;
   flex-direction: column;
@@ -34,6 +38,14 @@ a {
   padding-bottom: 20px;
 }
 
+#linea-home {
+  width: 2px;
+  position: absolute;
+  background-color: yellowgreen;
+  height: 24px;
+  left: 2px;
+}
+
 .blocco-navigazione ul li {
   font-size: 10px;
   padding-bottom: 5px;
@@ -42,6 +54,14 @@ a {
 .blocco-navigazione ul li a, #installa-john a, #piu {
   color: white;
   opacity: 0.5;
+}
+
+.blocco-navigazione ul li a:focus, #installa-john a:focus, #piu:focus {
+  opacity: 1;
+}
+
+#home a {
+  opacity: 1;
 }
 
 .blocco-navigazione h4 {
@@ -164,6 +184,7 @@ main {
   height: 70px;
   align-items: center;
   width: calc(100% - 200px);
+  padding: 15px;
 }
 
 .bottone-up button {
@@ -203,8 +224,11 @@ main nav ul li a {
   opacity: 0.5;
 }
 
+main nav ul li a:focus {
+  opacity: 1;
+}
+
 main nav ul li a:hover {
-  color: white;
   opacity: 1;
 }
 
@@ -252,7 +276,7 @@ main nav ul li a:hover {
 
 .canzoni {
   display: flex;
-  padding: 20px 0;
+  padding-top: 20px;
 }
 
 .canzoni img {
