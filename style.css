@@ -444,23 +444,22 @@ main nav ul li a:hover {
 
 #linea-play {
   height: 4px;
-  background-color: grey;
+  background-color: #535353;
   width: 400px;
   align-self: center;
-  opacity: 0.4;
 }
 
 #tratto-pallino {
   height: 100%;
   width: 20%;
-  background-color: white;
+  background-color: #c8c8c8;
   justify-content: flex-end;
 }
 
 #pallino {
-  height: 8px;
-  width: 10%;
-  border-radius: 30%;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
   background-color: white;
   align-self: center;
   display: none;
@@ -475,7 +474,7 @@ main nav ul li a:hover {
 }
 
 #linea-play:hover #tratto-pallino {
-  background-color: lightgreen;
+  background-color: yellowgreen;
 }
 
 /* parte destra player */
@@ -486,23 +485,22 @@ main nav ul li a:hover {
 
 #linea-due {
   height: 4px;
-  background-color: grey;
+  background-color: #535353;
   width: 100px;
   align-self: center;
-  opacity: 0.4;
 }
 
 #tratto-due {
   height: 100%;
   width: 20%;
-  background-color: white;
+  background-color: #c8c8c8;
   justify-content: flex-end;
 }
 
 #pallino-due {
-  height: 8px;
-  width: 40%;
-  border-radius: 30%;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
   background-color: white;
   align-self: center;
   display: none;
@@ -517,7 +515,7 @@ main nav ul li a:hover {
 }
 
 #linea-due:hover #tratto-due {
-  background-color: lightgreen;
+  background-color: yellowgreen;
 }
 
 /* mediaquery */
